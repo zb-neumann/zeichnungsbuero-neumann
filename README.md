@@ -4,123 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeichnungsbüro Neumann</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fff;
-      color: #000;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: #1a1a1a;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #3399ff;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .hero {
-      background-color: #3399ff;
-      color: #fff;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-    .leistungen {
-      background-color: #f4f4f4;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 600px;
-      margin: auto;
-    }
-    input, textarea {
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-    button:hover {
-      background-color: #3399ff;
-    }
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <h1>Zeichnungsbüro Neumann</h1>
-    <p id="slogan">Präzision trifft Planung</p>
+    <img src="logo.png" alt="Zeichnungsbüro Neumann Logo" style="height: 60px;">
+    <nav>
+      <a href="#startseite">Startseite</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#start">Startseite</a>
-    <a href="#ueber-uns">Über uns</a>
-    <a href="#leistungen">Leistungen</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
 
-  <section class="hero" id="start">
-    <h2 id="hero-title"></h2>
-    <p id="hero-text"></p>
-  </section>
+  <main>
+    <section id="startseite">
+      <h1 id="hero-title"></h1>
+      <p id="hero-text"></p>
+    </section>
 
-  <section id="ueber-uns">
-    <h2>Über uns</h2>
-    <p id="ueber-uns-text"></p>
-  </section>
+    <section id="ueber-uns">
+      <h2>Über uns</h2>
+      <p id="ueber-uns-text"></p>
+    </section>
 
-  <section id="leistungen" class="leistungen">
-    <h2>Unsere Leistungen</h2>
-    <ul id="leistungen-liste"></ul>
-  </section>
+    <section id="leistungen">
+      <h2>Leistungen</h2>
+      <ul id="leistungen-liste"></ul>
+    </section>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <form>
-      <input type="text" name="name" placeholder="Ihr Name" required>
-      <input type="email" name="email" placeholder="Ihre E-Mail" required>
-      <textarea name="nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
-      <button type="submit">Absenden</button>
-    </form>
-  </section>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form name="kontakt" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Ihr Name" required><br>
+        <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required><br>
+        <textarea name="nachricht" placeholder="Ihre Nachricht" required></textarea><br>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Zeichnungsbüro Neumann</p>
   </footer>
 
   <script src="content.js"></script>
+
 </body>
 </html>
-zeichnungsbuero-neumann/![ChatGPT Image 22  Apr  2025, 21_22_31](https://github.com/user-attachments/assets/c36bab1a-6487-46bd-accd-acf415ca59c6)
