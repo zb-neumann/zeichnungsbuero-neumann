@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeichnungsbüro Neumann</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Zeichnungsbüro Neumann Logo" style="height: 60px;">
+    <nav>
+      <a href="#startseite">Startseite</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="startseite">
+      <h1 id="hero-title"></h1>
+      <p id="hero-text"></p>
+    </section>
+
+    <section id="ueber-uns">
+      <h2>Über uns</h2>
+      <p id="ueber-uns-text"></p>
+    </section>
+
+    <section id="leistungen">
+      <h2>Leistungen</h2>
+      <ul id="leistungen-liste"></ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form name="kontakt" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Ihr Name" required><br>
+        <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required><br>
+        <textarea name="nachricht" placeholder="Ihre Nachricht" required></textarea><br>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zeichnungsbüro Neumann</p>
+  </footer>
+
+  <script src="content.js"></script>
+
+</body>
+</html>
